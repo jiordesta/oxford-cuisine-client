@@ -6,4 +6,47 @@
     .no-scroll{
         @apply overflow-hidden;
     }
+    .header-link{
+        @apply bg-color4 uppercase text-xl text-color1 drop-shadow-lg cursor-pointer w-full text-center py-1 rounded-lg bg-opacity-80 hover:bg-color3 hover:text-color4;
+    }
+    .orders {
+        @apply hidden flex-row w-full justify-evenly gap-4;
+    }
+    .orders.active {
+        @apply flex;
+    }
+    .menu {
+        @apply hidden flex-row w-full justify-evenly gap-4;
+    }
+    .menu.active {
+        @apply flex;
+    }
+    .riders {
+        @apply hidden;
+    }
+    .riders.active {
+        @apply block;
+    }
+    .sales {
+        @apply hidden;
+    }
+    .sales.active {
+        @apply block;
+    }
+    .account {
+        @apply hidden;
+    }
+    .account.active {
+        @apply block;
+    }
+}
+.bg {
+    background-image: url('/images/restaurant.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
